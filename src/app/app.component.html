@@ -1,0 +1,24 @@
+<ng-container>
+  <mat-toolbar class="example-header" color="primary">
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    Header
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+       <mat-icon>keyboard_voice</mat-icon>
+    </mat-sidenav>
+
+    <mat-sidenav-content >
+      
+      <div class="main">
+        <app-bar-chart></app-bar-chart>
+        <app-force-chart></app-force-chart>
+      </div>
+
+    </mat-sidenav-content> 
+  </mat-sidenav-container>
+
+  <mat-toolbar class="example-footer" color="primary">Footer</mat-toolbar>
+</ng-container>
