@@ -36,4 +36,9 @@
   }
   .main{
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main > div{
+    padding: 20px;
   }

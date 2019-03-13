@@ -6,11 +6,13 @@ import { DemoMaterialModule } from './material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { ForceChartComponent } from './force-chart/force-chart.component';
+import { GoogleTrendComponent } from './google-trend/google-trend.component';
 @NgModule({
   declarations: [
     AppComponent,
     BarChartComponent,
-    ForceChartComponent
+    ForceChartComponent,
+    GoogleTrendComponent
   ],
   imports: [
     BrowserModule,DemoMaterialModule,BrowserAnimationsModule
