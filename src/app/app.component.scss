@@ -4,13 +4,19 @@
     bottom: 60px;
     left: 0;
     right: 0;
+    border: 0.5px solid white;
+    background-color: #4b4b4f;
   }
-  
+  .mic{
+   
+  }
   .example-sidenav {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250px;
+    background-color: #4b4b4f;
+    border: 0.5px solid white;
     /* background: rgba(255, 0, 0, 0.5); */
   }
   .example-sidenav1 {
@@ -18,6 +24,7 @@
     align-items: center;
     justify-content: center;
     width: 350px;
+    border: 0.5px solid white;
     /* background: rgba(255, 0, 0, 0.5); */
   }
   
@@ -26,13 +33,19 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: black;
+    border: 0.5px solid white;
   }
-  
+  .list-item{
+    color: white;
+  }
   .example-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: black;
+    border: 0.5px solid white;
   }
   .main{
     padding: 20px;

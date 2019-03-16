@@ -56,12 +56,12 @@ export class GoogleTrendComponent implements OnInit {
                 }
             },
             {
-                name: "Macys",
+                name: "Deep",
                 value: 6181,
                 itemStyle: this.createRandomItemStyle()
             },
             {
-                name: "Amy Schumer",
+                name: "Rishabh",
                 value: 4386,
                 itemStyle: this.createRandomItemStyle()
             },
