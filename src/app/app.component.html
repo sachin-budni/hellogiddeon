@@ -9,11 +9,11 @@
     <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
        <mat-icon style="color:white" (click)="listtoggle = !listtoggle">list</mat-icon>
        <mat-list *ngIf="listtoggle" role="list" class="list-item">
-          <mat-list-item role="listitem"class="list-item">Item 1</mat-list-item>
-          <mat-list-item role="listitem"class="list-item">Item 2</mat-list-item>
-          <mat-list-item role="listitem"class="list-item">Item 3</mat-list-item>
-          <mat-list-item role="listitem"class="list-item">Item 4</mat-list-item>
-          <mat-list-item role="listitem"class="list-item">Item 5</mat-list-item>
+          <mat-list-item role="listitem"class="list-item" [routerLink]="['/']">Home</mat-list-item>
+          <mat-list-item role="listitem"class="list-item" [routerLink]="['/login']">Login</mat-list-item>
+          <mat-list-item role="listitem"class="list-item" [routerLink]="['/google']">Google</mat-list-item>
+          <mat-list-item role="listitem"class="list-item" [routerLink]="['/force']">Force</mat-list-item>
+          <mat-list-item role="listitem"class="list-item" [routerLink]="['/bar']">Bar</mat-list-item>
           <mat-list-item role="listitem"class="list-item">Item 6</mat-list-item>
           <mat-list-item role="listitem"class="list-item">Item 7</mat-list-item>
           <mat-list-item role="listitem"class="list-item">Item 8</mat-list-item>
@@ -24,7 +24,8 @@
 
     <mat-sidenav-content >
       
-      <div class="main">
+      <router-outlet></router-outlet>
+      <!-- <div class="main">
         <div>
             <app-bar-chart></app-bar-chart>
         </div>
@@ -49,10 +50,12 @@
         <div>
             e-chart5
         </div>
-      </div>
+      </div> -->
 
     </mat-sidenav-content> 
   </mat-sidenav-container>
 
   <mat-toolbar class="example-footer" color="primary">Footer</mat-toolbar>
 </ng-container>
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-login></app-login> -->
